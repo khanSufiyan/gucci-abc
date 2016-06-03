@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset='utf-8'/>
+    <title>Gucci Runway - Women - Pre-Fall 2016</title>
+
+    <link href="/css/vendor.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" media="screen" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <div id="header-container"></div>
+
+    <div id="content" class="wrap">
+      {{{body}}}
+    </div>
+
+    <div id="footer-container"></div>
+
+    <script src="/js/vendor.js"></script>
+    <script>jwplayer.key="xTHCwdTI7DdwbHNvupADPA1jW64u4FN2LvPTKg==";</script>
+
+    <script src="/js/main.js"></script>
+    <script>
+    (function() {
+      var App = window.App = new (require('app/app'))({{json appData}});
+      App.bootstrapData({{json bootstrappedData}});
+      App.start();
+    })();
+    </script>
+
+  </body>
+
+</html>

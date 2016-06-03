@@ -1,0 +1,171 @@
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder; say DNS cache flushed 
+
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+Mobile first design - 
+
+@media (min-width: @screen-sm-min) { 768px 
+}
+@media (min-width: @screen-md-min) { 991px 
+}
+@media (min-width: @screen-lg-min) { 1200px
+}
+
+@screen-xs-max:              (@screen-sm-min - 1); 767px
+@screen-sm-max:              (@screen-md-min - 1); 991px
+@screen-md-max:              (@screen-lg-min - 1); 1199px
+
+
+
+/* ==========================================================================
+   CODE samples
+   ========================================================================== */
+
+//Inside view get current element jq
+var currentEl = this.$el;	
+this.$('.slider').slider();
+{{#if models.length}}{{/if}} 
+{{#each this.illustrations}}{{/each}}
+../../title == parent object
+
+
+
+/* ==========================================================================
+   SITE TEMPLATES
+   ========================================================================== */
+
+TEMPLATES LIST BY MOHAN :-
+
+slider_articles_01
+video_01
+video_02
+slider_articles_02
+slider_articles_03
+slider_articles_04
+slider_articles_05
+products_gallery_01
+products_gallery_02
+products_grid_01
+articles_2col_grid_01
+
+
+TEMPLATES LIST BY ASHWINI :-
+
+
+
+/* ==========================================================================
+   TEMPLATES MAPPINGS
+   ========================================================================== */
+
+//Home Page
+
+HomePage_Section_1 == slider_articles_01
+HomePage_Section_2 == video_01
+HomePage_Section_3 == image_text_01a
+HomePage_Section_4 == slider_articles_02
+HomePage_Section_5 == image_text_01a
+HomePage_Section_6 == articles_2col_grid_01
+HomePage_Section_7 == quote_01
+HomePage_Section_8 == image_text_03
+HomePage_Section_9 == products_gallery_01
+HomePage_Section_10 == video_01
+HomePage_Section_11 == image_text_01a
+
+
+		this.sectionsMapping = {
+
+			HomePage_Section_1: {
+				resourceType: 'collection',
+				resourceName: 'HomePage_Section_1',
+				viewName: 'slider_articles_01/slider_articles_01', 
+			},
+			HomePage_Section_2: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_2', 
+				viewName: 'video_01/video_01', 				
+			},
+			HomePage_Section_3: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_3', 
+				viewName: 'image_text_01a/image_text_01a', 		
+			},
+			HomePage_Section_4: {
+				resourceType: 'collection',
+				resourceName: 'HomePage_Section_4', 
+				viewName: 'slider_articles_02/slider_articles_02', 	
+			},
+			HomePage_Section_5: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_5', 
+				viewName: 'image_text_01a/image_text_01a', 		
+			},
+			HomePage_Section_6: {
+				resourceType: 'collection',
+				resourceName: 'HomePage_Section_6', 
+				viewName: 'articles_2col_grid_01/articles_2col_grid_01', 
+			},
+			HomePage_Section_7: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_7', 
+				viewName: 'quote_01/quote_01', 				
+			},
+			HomePage_Section_8: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_8', 
+				viewName: 'image_text_03/image_text_03', 		
+			},
+			HomePage_Section_9: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_9', 
+				viewName: 'products_gallery_01/products_gallery_01', 	
+			},
+			HomePage_Section_10: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_10', 
+				viewName: 'video_01/video_01', 			
+			},
+			HomePage_Section_11: {
+				resourceType: 'model',
+				resourceName: 'HomePage_Section_11', 
+				viewName: 'image_text_01a/image_text_01a', 		
+			} 
+		};
+   
+/* ==========================================================================
+   MODELS
+   ========================================================================== */
+
+{{#each sections}}
+	<section id="home-section__0@index" class="ow-module clearfix">
+		{{view this.layout  data=this.data}}    
+	</section>
+{{/each}}
+  
+
+
+
+/* ==========================================================================
+   API URLs
+   ========================================================================== */
+http://qa.optcentral.com/optportal/services/menuSections.json?login=omega_super&company=106
+
+http://qa.optcentral.com/optportal/services/articles.json?sect=720&ssect=720&menu=54&login=omega_super&company=106&comp=106
+
+{{#each _view.sectionsMapping}}
+  {{loopSectionMappings this}}
+{{/each}}
+
+{#each _view.sectionsMapping}}
+
+  <section id="ttttttt__0{{math @index '+' 1}}" class="ow-module clearfix">
+    {{view this.[1] this.[2]=this.[0]}}
+  </section>
+
+{{/each}}
+
+		
+

@@ -1,0 +1,323 @@
+
+
+/******************************************************
+   Global Variables
+******************************************************/
+
+
+@primary-color: #c40d2e;
+@border-color: #e5e5e5;
+@text-color: #555;
+@color-white: #fff;
+
+@images_path: '../images';
+@icon-font-path: '../fonts/glyphicons/';
+
+.ow-color-white{
+  color: @color-white;
+}
+.ow-color-primary{
+  color: @primary-color;
+}
+
+
+/*******************************************
+  Bootstrap Overrides
+******************************************/
+
+// change gutter
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         40px;
+
+
+.ow-container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Overirde container make it full width
+
+.container {
+  margin-left: 4.166666%;
+  margin-right: 4.166666%;
+  @media (min-width: @screen-sm-min) {
+    margin-left: 10.999998%;
+    margin-right: 10.999998%;
+  }
+  @media (min-width: @screen-md-min) {
+    margin-left: 11.999998%;
+    margin-right: 11.999998%;
+  }
+  padding-left: 0;
+  padding-right: 0;
+
+  width: auto;
+  @media (min-width: @screen-sm-min) {
+    width: auto;
+  }
+  @media (min-width: @screen-md-min) {
+    width: auto;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: auto;
+  }
+}
+
+//End common styles for container
+
+.btn{
+  border-radius: 0;
+  padding: 14px 48px;
+  color: #555555;
+  cursor: pointer;
+  -webkit-transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+  outline: none;
+  box-sizing: border-box;
+  font-size:16px;
+}
+.btn-default{
+  text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+}
+.btn-default:hover,
+.btn-default:active{
+  color: #ffffff;
+  background-color: @primary-color;
+}
+
+/******************************************************
+   Global buttons
+******************************************************/
+
+.btn-white-transparent{
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  color:#fff;
+  background-color: transparent;
+}
+.btn-white-transparent:hover,
+.btn-white-transparent:active{
+  color: @text-color;
+  background-color: #fff;
+}
+
+
+/******************************************************
+	 Load Fonts
+******************************************************/
+
+/******************************************************
+   Mixins
+******************************************************/
+
+// Mixins for margin
+// syntax: sm-margin-lr-15px, sm-margin-lr-0px
+
+.make-margin(@class, @margin: 15, @unit: px) {
+  .@{class}-margin-lr-@{margin}@{unit}{
+    margin-left: e(%("%d@{unit}", @margin));
+    margin-right: e(%("%d@{unit}", @margin));
+  }
+  .@{class}-margin-l-@{margin}@{unit}{
+    margin-left: e(%("%d@{unit}", @margin));
+  }
+  .@{class}-margin-r-@{margin}@{unit}{
+    margin-right: e(%("%@{unit}", @margin));
+  }
+
+}
+
+.make-margin(xs);
+.make-margin(xs, 0); //margin 0
+
+@media (min-width: @screen-sm-min) {
+  .make-margin(sm);
+  .make-margin(sm, 0);
+}
+@media (min-width: @screen-md-min) {
+  .make-margin(md);
+  .make-margin(md, 0);
+}
+@media (min-width: @screen-lg-min) {
+  .make-margin(lg);
+  .make-margin(lg, 0);
+}
+
+
+// Mixins for padding
+// syntax: sm-padding-lr-15px, sm-padding-lr-0px
+
+.make-padding(@class, @padding: 15, @unit: px) {
+  .@{class}-padding-lr-@{padding}@{unit}{
+    padding-left: e(%("%d@{unit}", @padding));
+    padding-right: e(%("%d@{unit}", @padding));
+  }
+  .@{class}-padding-l-@{padding}@{unit}{
+    padding-left: e(%("%d@{unit}", @padding));
+  }
+  .@{class}-padding-r-@{padding}@{unit}{
+    padding-right: e(%("%d@{unit}", @padding));
+  }
+}
+
+.make-padding(xs);
+.make-padding(xs, 0);
+@media (min-width: @screen-sm-min) {
+  .make-padding(sm);
+  .make-padding(sm, 0);
+}
+@media (min-width: @screen-md-min) {
+  .make-padding(md);
+  .make-padding(md, 0);
+}
+@media (min-width: @screen-lg-min) {
+  .make-padding(lg);
+  .make-padding(lg, 0);
+}
+
+
+
+/******************************************************
+	 Utility Classes
+******************************************************/
+/* vertical alignment styles */
+
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}
+
+/* columns of same height styles */
+.row-full-height {
+  height: 100%;
+}
+.col-full-height {
+  height: 100%;
+  vertical-align: middle;
+}
+.row-same-height {
+  display: table;
+  width: 100%;
+  /* fix overflow */
+  table-layout: fixed;
+}
+.col-xs-height {
+  display: table-cell;
+  float: none !important;
+}
+
+@media (min-width: @screen-sm-min) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: @screen-md-min) {
+  .col-md-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+@media (min-width: @screen-lg-min) {
+  .col-lg-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+
+/* visiblity classes */
+
+.ow-hidden-mobile{
+  display: block;
+}
+.ow-visible-mobile{
+  display: none;
+}
+.ow-hidden-desktop{
+  display: none;
+}
+.ow-visible-desktop{
+  display: block;
+}
+@media (max-width: @screen-xs-max) {
+
+  .ow-hidden-desktop{
+    display: block;
+  }
+  .ow-visible-desktop{
+    display: none;
+  }
+  .ow-hidden-mobile{
+    display: none !important;
+  }
+  .ow-visible-mobile{
+    display: block !important;
+  }
+
+}
+
+/* site specific global classes */
+
+.ow-full-height{
+	height: 100%;
+}
+.ow-display-table{
+	display: table;
+	width: 100%;
+	height: 100%;
+	/* fix overflow */
+	table-layout: fixed;
+}
+.ow-display-table-cell{
+	display: table-cell;
+  	float: none !important;
+	vertical-align: middle;
+}
+
+
+.ow-responsive-image {
+    max-width: 100%;
+    @media (min-width: @screen-md-min) {
+	    width: 100%;
+    }
+}
+
+.ow-col-centered{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ow-pos-relative{
+  position: relative;
+}
+.ow-bold{
+  font-weight: bold;
+}
+
+/******************************************************
+	 Comman Author's Style
+******************************************************/
+
+a:active, a:hover {
+    outline: 0;
+    color: @primary-color;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+
+.ow-overflow-hidden{
+  overflow: hidden;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "gucci-abc",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "0.10.25",
+    "npm": "2.x.x"
+  },
+  "author": "mohan@optcentral.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "3.5.1",
+    "underscore": "^1.6.0",
+    "handlebars": "^3.0.3",
+    "rendr": "1.0.3",
+    "rendr-handlebars": "0.2.0",
+    "request": "~2.30.0",
+    "config": "^0.4.35"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "grunt-browserify": "^1.2.12",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-handlebars": "^0.8.0",
+    "grunt-contrib-less": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "nodemon": "^1.0.17"
+  }
+}
