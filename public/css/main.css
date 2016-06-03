@@ -7165,9 +7165,39 @@ html {
 .products .product-jewellery img {
   max-width: 100%;
 }
+.watches {
+  margin-top: 50px;
+}
+.watches .watch-one img {
+  max-width: 100%;
+}
+.watches .watch-two img {
+  max-width: 100%;
+}
+.watches .watch-three img {
+  max-width: 100%;
+}
 .watch-banner {
   margin-top: 90px;
 }
 .watch-banner img {
+  max-width: 100%;
+}
+.jewelleries {
+  margin-top: 50px;
+}
+.jewelleries .jewellery-one img {
+  max-width: 100%;
+}
+.jewelleries .jewellery-two img {
+  max-width: 100%;
+}
+.jewelleries .jewellery-three img {
+  max-width: 100%;
+}
+.jewellery-banner {
+  margin-top: 90px;
+}
+.jewellery-banner img {
   max-width: 100%;
 }

@@ -17,13 +17,15 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  buffer += "\n\n\n\n<div class=\"container\">\n	<div class=\"row\">\n	  <div class=\"col-xs-12 col-sm-12\">\n			"
+  buffer += "\n\n\n\n\n\n <div class=\"container\">\n	<div class=\"row\">\n	  <div class=\"col-xs-12 col-sm-12\">\n			"
     + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "gucci-banner/gucci-banner", options) : helperMissing.call(depth0, "view", "gucci-banner/gucci-banner", options)))
-    + "\n		</div>\n	 </div>\n	<div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
+    + "\n		</div>\n	 </div>\n\n	 <div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
     + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewellery-banner/jewellery-banner", options) : helperMissing.call(depth0, "view", "jewellery-banner/jewellery-banner", options)))
-    + "\n		</div>\n	</div>\n	<div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
+    + "\n		</div>\n	</div>\n\n	<div class=\"row\">\n	 	<div class=\"col-xs-6 col-sm-6\">\n		 "
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewellery-banner/jewellery-banner", options) : helperMissing.call(depth0, "view", "jewellery-banner/jewellery-banner", options)))
+    + "\n		</div>\n\n	 	<div class=\"col-xs-6 col-sm-6\">\n		 "
     + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewelleries/jewelleries", options) : helperMissing.call(depth0, "view", "jewelleries/jewelleries", options)))
-    + "\n		</div>\n	</div>\n</div>\n\n\n";
+    + "\n		</div>\n	</div>\n</div>\n\n";
   return buffer;
   });
 
@@ -33,7 +35,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"jewelleries row\">\n   <div class=\"jewellery-one col-xs-4 col-sm-4\" align=\"left\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_one_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_one_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_one_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_one_lg.jpg\">\n    </figure>\n  </div>\n\n  <div class=\"jewellery-two col-xs-4 col-sm-4\" align=\"center\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_two_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_two_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_two_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_two_lg.jpg\">\n    </figure>\n  </div>\n\n  <div class=\"jewellery-three col-xs-4 col-sm-4\" align=\"right\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_three_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_three_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_three_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_three_lg.jpg\">\n    </figure>\n  </div>\n</div>";
+  return "<div class=\"jewelleries row\">\n   <div class=\"jewellery-one col-xs-4 col-sm-4\" align=\"left\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_lg.jpg\">\n    </figure>\n  </div>\n\n  <div class=\"jewellery-two col-xs-4 col-sm-4\" align=\"center\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_two_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_two_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_two_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_two_lg.jpg\">\n    </figure>\n  </div>\n\n  <div class=\"jewellery-three col-xs-4 col-sm-4\" align=\"right\">\n    <figure>\n       <img class=\"visible-xs\" src=\"/images/jewellery_three_xs.jpg\">\n       <img class=\"visible-sm\" src=\"/images/jewellery_three_sm.jpg\">\n       <img class=\"visible-md\" src=\"/images/jewellery_three_md.jpg\">\n       <img class=\"visible-lg\" src=\"/images/jewellery_three_lg.jpg\">\n    </figure>\n  </div>\n</div>";
   });
 
 templates["jewellery-banner/jewellery-banner"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
