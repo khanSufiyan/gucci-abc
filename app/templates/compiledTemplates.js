@@ -17,15 +17,17 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  buffer += "\n\n\n\n\n\n <div class=\"container\">\n	<div class=\"row\">\n	  <div class=\"col-xs-12 col-sm-12\">\n			"
+  buffer += "\n\n\n\n\n\n\n<div class=\"row\">\n	<div class=\"col-xs-12 col-sm-12\">\n		"
     + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "gucci-banner/gucci-banner", options) : helperMissing.call(depth0, "view", "gucci-banner/gucci-banner", options)))
-    + "\n		</div>\n	 </div>\n\n	 <div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewellery-banner/jewellery-banner", options) : helperMissing.call(depth0, "view", "jewellery-banner/jewellery-banner", options)))
-    + "\n		</div>\n	</div>\n\n	<div class=\"row\">\n	 	<div class=\"col-xs-6 col-sm-6\">\n		 "
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewellery-banner/jewellery-banner", options) : helperMissing.call(depth0, "view", "jewellery-banner/jewellery-banner", options)))
-    + "\n		</div>\n\n	 	<div class=\"col-xs-6 col-sm-6\">\n		 "
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "jewelleries/jewelleries", options) : helperMissing.call(depth0, "view", "jewelleries/jewelleries", options)))
-    + "\n		</div>\n	</div>\n</div>\n\n";
+    + "\n	</div>\n</div>\n\n\n	<div class=\"row \">\n		<div class=\"col-xs-12 col-sm-12\">\n			"
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-banner/product-page-banner", options) : helperMissing.call(depth0, "view", "product-page-banner/product-page-banner", options)))
+    + "\n		</div>\n	</div>\n\n	<div class=\"row product-options\">\n\n		<div class=\"col-xs-6 col-sm-6\">\n			"
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-collection-dropdown/product-page-collection-dropdown", options) : helperMissing.call(depth0, "view", "product-page-collection-dropdown/product-page-collection-dropdown", options)))
+    + "\n		</div>\n\n		<div class=\"col-xs-6 col-sm-6\">\n			"
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-filter-dropdown/product-page-filter-dropdown", options) : helperMissing.call(depth0, "view", "product-page-filter-dropdown/product-page-filter-dropdown", options)))
+    + "\n		</div>\n\n	</div>\n\n	<div class=\"row product-list\">\n		<div class=\"col-xs-12 col-sm-12\">\n			"
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-product-list/product-page-product-list", options) : helperMissing.call(depth0, "view", "product-page-product-list/product-page-product-list", options)))
+    + "\n		</div>\n	</div>\n\n\n\n";
   return buffer;
   });
 
@@ -45,6 +47,42 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 
 
   return " <div class=\"jewellery-banner\">\n    <img src=\"/images/jewellery_banner.jpg\">\n </div>";
+  });
+
+templates["product-page-banner/product-page-banner"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return " <div class=\"product-page-banner\">\n    <img src=\"/images/banner_j_guccifloral_pg.png\">\n </div>";
+  });
+
+templates["product-page-collection-dropdown/product-page-collection-dropdown"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return " <div class=\"product-page-collection-dropdown\">\n\n  <div class=\"dropdown\">\n			<button class=\"dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n				Category\n				<span class=\"caret\"></span>\n			</button>\n			<ul class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n				<li>Yellow Gold</li>\n					<li>Pink Gold</li>\n					<li>White Gold</li>\n					<li>Sliver</li>\n			</ul>\n		</div>\n </div>\n";
+  });
+
+templates["product-page-filter-dropdown/product-page-filter-dropdown"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<div class=\"product-page-filter-dropdown pull-right row\">\n\n<div class=\"col-xs-6 col-sm-6 \" align=\"right\">Filter by :</div>\n\n<div class=\"filter-dropdown col-xs-6 col-sm-6\" align=\"right\">\n  <div class=\"row\">\n		<div class=\"porduct-category col-xs-6 col-sm-6\">\n			<div class=\"dropdown\">\n			<button class=\" dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n				Category\n				<span class=\"caret\"></span>\n			</button>\n			<ul class=\"dropdown-menu pull-right\" aria-labelledby=\"dropdownMenu1\">\n				<li>Yellow Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>Pink Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>White Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>Sliver<input class=\"pull-right\" type=\"checkbox\"/></li>\n			</ul>\n			</div>\n		</div>\n		<div class=\"priduct-material col-xs-6 col-sm-6\">\n			<div class=\"dropdown\">\n			<button class=\"dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n				Matarial\n				<span class=\"caret\"></span>\n			</button>\n			<ul class=\"dropdown-menu pull-right\" aria-labelledby=\"dropdownMenu1\">\n				<li>Yellow Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>Pink Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>White Gold<input class=\"pull-right\" type=\"checkbox\"/></li>\n				<li>Sliver<input class=\"pull-right\" type=\"checkbox\"/></li>\n			</ul>\n			</div>\n	  </div>\n	 </div>\n </div>\n</div>\n";
+  });
+
+templates["product-page-product-list/product-page-product-list"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
+  this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
+  
+
+
+  return "<div class=\"row\">\n <div class=\"product-page-product-list col-sm-3 col-xs-3\">\n\n     <img src=\"/images/jewellery_three_xs.jpg\">\n		 <div class=\"product-title\">gucci flora</div>\n		 <div class=\"product-discription\">black PVD stain less steel case,black matte dial,black rubber strap</div>\n		 <button> SHOP THIS <span> > </span> </i></button>\n </div>\n\n <div class=\"product-page-product-list col-sm-3 col-xs-3\">\n\n     <img src=\"/images/jewellery_three_xs.jpg\">\n		 <div class=\"product-title\">gucci flora</div>\n		 <div class=\"product-discription\">black PVD stain less steel case,black matte dial,black rubber strap</div>\n		 <button>SHOP THIS<span> > </span></button>\n </div>\n\n <div class=\"product-page-product-list col-sm-3 col-xs-3\">\n\n     <img src=\"/images/jewellery_three_xs.jpg\">\n		 <div class=\"product-title\">gucci flora</div>\n		 <div class=\"product-discription\">black PVD stain less steel case,black matte dial,black rubber strap</div>\n		 <button>SHOP THIS<span> > </span></button>\n </div>\n\n <div class=\"product-page-product-list col-sm-3 col-xs-3\">\n\n     <img src=\"/images/jewellery_three_xs.jpg\">\n		 <div class=\"product-title\">gucci flora</div>\n		 <div class=\"product-discription\">black PVD stain less steel case,black matte dial,black rubber strap</div>\n		 <button>SHOP THIS<span> > </span></button>\n </div>\n\n</div>";
   });
 
 templates["products/products"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {

@@ -7115,6 +7115,11 @@ html {
 .ow-overflow-hidden {
   overflow: hidden;
 }
+.product-options {
+  border: 1px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .gucci_logo_banner {
   display: block;
   text-indent: -9999em;
@@ -7200,4 +7205,69 @@ html {
 }
 .jewellery-banner img {
   max-width: 100%;
+}
+.product-page-banner {
+  margin-top: 90px;
+}
+.product-page-banner img {
+  max-width: 100%;
+}
+.product-page-collection-dropdown {
+  margin-top: 10px;
+}
+.product-page-collection-dropdown button {
+  padding: 5px;
+  background-color: #ffffff;
+  border: none;
+}
+.product-page-collection-dropdown button i {
+  font-size: 60%;
+}
+.product-page-filter-dropdown {
+  margin-top: 10px;
+}
+.product-page-filter-dropdown span {
+  font-size: 15px;
+}
+.product-page-filter-dropdown button {
+  padding: 5px;
+  background-color: #ffffff;
+  border: none;
+}
+.product-page-filter-dropdown button i {
+  font-size: 60%;
+}
+.product-page-filter-dropdown .filter-dropdown {
+  color: #c7c7c7;
+}
+.product-page-filter-dropdown .filter-dropdown ul {
+  border-radius: 0px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 0px;
+}
+.product-page-product-list {
+  text-align: center;
+  padding: 10px;
+}
+.product-page-product-list img {
+  padding: 10px;
+  max-width: 100%;
+}
+.product-page-product-list button {
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  font-weight: 500;
+}
+.product-page-product-list button span {
+  padding: 5px;
+  font-size: 100%;
+}
+.product-page-product-list .product-title {
+  padding: 10px;
+}
+.product-page-product-list .product-discription {
+  padding: 10px;
+  color: #c7c7c7;
 }

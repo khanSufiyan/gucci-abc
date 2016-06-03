@@ -53,27 +53,37 @@
 </div>
  --}}
 
- <div class="container">
-	<div class="row">
-	  <div class="col-xs-12 col-sm-12">
-			{{view 'gucci-banner/gucci-banner'}}
-		</div>
-	 </div>
 
-	 <div class="row">
-	 	<div class="col-xs-12 col-sm-12">
-		 {{view 'jewellery-banner/jewellery-banner'}}
-		</div>
-	</div>
-
-	<div class="row">
-	 	<div class="col-xs-6 col-sm-6">
-		 {{view 'jewellery-banner/jewellery-banner'}}
-		</div>
-
-	 	<div class="col-xs-6 col-sm-6">
-		 {{view 'jewelleries/jewelleries'}}
-		</div>
+<div class="row">
+	<div class="col-xs-12 col-sm-12">
+		{{view 'gucci-banner/gucci-banner'}}
 	</div>
 </div>
+
+
+	<div class="row ">
+		<div class="col-xs-12 col-sm-12">
+			{{view 'product-page-banner/product-page-banner'}}
+		</div>
+	</div>
+
+	<div class="row product-options">
+
+		<div class="col-xs-6 col-sm-6">
+			{{view 'product-page-collection-dropdown/product-page-collection-dropdown'}}
+		</div>
+
+		<div class="col-xs-6 col-sm-6">
+			{{view 'product-page-filter-dropdown/product-page-filter-dropdown'}}
+		</div>
+
+	</div>
+
+	<div class="row product-list">
+		<div class="col-xs-12 col-sm-12">
+			{{view 'product-page-product-list/product-page-product-list'}}
+		</div>
+	</div>
+
+
 
