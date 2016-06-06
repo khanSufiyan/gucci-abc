@@ -7275,6 +7275,9 @@ html {
   padding: 5px;
   font-size: 100%;
 }
+.product-page-product-list button:focus {
+  outline: none;
+}
 .product-page-product-list .product-title {
   padding: 10px;
 }
