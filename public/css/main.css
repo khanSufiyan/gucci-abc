@@ -7119,6 +7119,8 @@ html {
   border: 1px solid;
   padding-left: 10%;
   padding-right: 10%;
+  height: 50px;
+  line-height: 30px;
 }
 .gucci_logo_banner {
   display: block;
@@ -7213,7 +7215,12 @@ html {
   max-width: 100%;
 }
 .product-page-collection-dropdown {
-  margin-top: 10px;
+  padding-top: 2px;
+}
+.product-page-collection-dropdown ul {
+  border-radius: 0px;
+  padding: 10px;
+  margin-top: 4px;
 }
 .product-page-collection-dropdown button {
   padding: 5px;
@@ -7224,7 +7231,11 @@ html {
   font-size: 60%;
 }
 .product-page-filter-dropdown {
-  margin-top: 10px;
+  padding-top: 2px;
+}
+.product-page-filter-dropdown .filter-title {
+  padding-top: 5px;
+  padding-right: 0px;
 }
 .product-page-filter-dropdown span {
   font-size: 15px;
@@ -7243,8 +7254,8 @@ html {
 .product-page-filter-dropdown .filter-dropdown ul {
   border-radius: 0px;
   padding: 10px;
-  margin-right: 20px;
-  margin-top: 0px;
+  margin-left: 20px;
+  margin-top: 4px;
 }
 .product-page-product-list {
   text-align: center;
