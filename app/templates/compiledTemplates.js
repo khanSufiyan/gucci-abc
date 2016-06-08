@@ -17,17 +17,13 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   var buffer = "", helper, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  buffer += "\n\n\n\n\n\n\n<div class=\"row\">\n	<div class=\"col-xs-12 col-sm-12\">\n		"
+  buffer += " <div class=\"container\">\n	<div class=\"row\">\n	  <div class=\"col-xs-12 col-sm-12\">\n			"
     + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "gucci-banner/gucci-banner", options) : helperMissing.call(depth0, "view", "gucci-banner/gucci-banner", options)))
-    + "\n	</div>\n</div>\n\n\n	<div class=\"row \">\n		<div class=\"col-xs-12 col-sm-12\">\n			"
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-banner/product-page-banner", options) : helperMissing.call(depth0, "view", "product-page-banner/product-page-banner", options)))
-    + "\n		</div>\n	</div>\n\n	<div class=\"row product-options\">\n\n		<div class=\"col-xs-6 col-sm-6\">\n			"
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-collection-dropdown/product-page-collection-dropdown", options) : helperMissing.call(depth0, "view", "product-page-collection-dropdown/product-page-collection-dropdown", options)))
-    + "\n		</div>\n\n		<div class=\"col-xs-6 col-sm-6\">\n			"
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-filter-dropdown/product-page-filter-dropdown", options) : helperMissing.call(depth0, "view", "product-page-filter-dropdown/product-page-filter-dropdown", options)))
-    + "\n		</div>\n\n	</div>\n\n	<div class=\"row product-list\">\n		<div class=\"col-xs-12 col-sm-12\">\n			"
-    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "product-page-product-list/product-page-product-list", options) : helperMissing.call(depth0, "view", "product-page-product-list/product-page-product-list", options)))
-    + "\n		</div>\n	</div>\n\n\n\n";
+    + "\n		</div>\n	 </div>\n	<div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "video-banner/video-banner", options) : helperMissing.call(depth0, "view", "video-banner/video-banner", options)))
+    + "\n		</div>\n	</div>\n	<div class=\"row\">\n	 	<div class=\"col-xs-12 col-sm-12\">\n		 "
+    + escapeExpression((helper = helpers.view || (depth0 && depth0.view),options={hash:{},data:data},helper ? helper.call(depth0, "products/products", options) : helperMissing.call(depth0, "view", "products/products", options)))
+    + "\n		</div>\n	</div>\n</div>\n\n\n\n\n\n\n\n\n\n";
   return buffer;
   });
 
@@ -108,11 +104,10 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
 templates["video-banner/video-banner"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
   this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
-  var buffer = "";
+  
 
 
-  buffer += "<div>\n\n  <div class=\"video-banner\">\n    <figure>\n\n       <img class=\"visible-xs\" src=\"/images/VideoEditorialSmall_469*546.jpg\">\n       <img class=\"visible-sm\" src=\"/images/VideoEditorialMedium_1936*1092.jpg\">\n       <img class=\"visible-md\" src=\"/images/VideoEditorialSmall_938*1092.jpg\">\n       <img class=\"visible-lg\" src=\"/images/VideoEditorialStandard_1200*677.jpg\">\n\n       <a class=\"video-button\">\n        <i class=\"glyphicon glyphicon-play\"></i>\n      </a>\n    </figure>\n  \n  </div>\n </div>";
-  return buffer;
+  return "<div>\n  <div class=\"video-banner\" id=\"video-banner\">\n    <figure>\n\n       <img class=\"visible-xs\" src=\"/images/VideoEditorialSmall_469*546.jpg\">\n       <img class=\"visible-sm\" src=\"/images/VideoEditorialMedium_1936*1092.jpg\">\n       <img class=\"visible-md\" src=\"/images/VideoEditorialSmall_938*1092.jpg\">\n       <img class=\"visible-lg\" src=\"/images/VideoEditorialStandard_1200*677.jpg\">\n\n       <a class=\"video-button\" id=\"video-button\">\n        <i class=\"glyphicon glyphicon-play\"></i>\n      </a>\n  </figure>\n</div>\n  <div class=\"vedio-div\" id=\"vedio-div\">\n    <div class=\"vedio-close\">\n    <button id=\"vedio-close-button\" >Close <span>X</span></button>\n\n    </div>\n    <div class=\"video-wrapper\">\n    <video id=\"my-video\" class=\"video-js\" controls preload=\"auto\"\n    poster=\"gucci_video_poster.jpg\" data-setup='{}'>\n      <source src=\"/videos/gucci.mp4\" type='video/mp4'>\n      <source src=\"MY_VIDEO.webm\" type='video/webm'>\n      <p class=\"vjs-no-js\">\n        To view this video please enable JavaScript, and consider upgrading to a web browser that\n        <a href=\"http://videojs.com/html5-video-support/\" target=\"_blank\">supports HTML5 video</a>\n      </p>\n    </video>\n    </div>\n  </div>\n</div>\n";
   });
 
 templates["watch-banner/watch-banner"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
