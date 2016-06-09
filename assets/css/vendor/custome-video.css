@@ -1,0 +1,94 @@
+.video-js .vjs-control-bar {
+
+    width: 100%;
+    bottom: -30px;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background-color:#000 !important;
+    color: #C1B497;
+    padding: 2px;
+
+}
+
+
+.custom-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+  opacity: 1;
+}
+.custom-skin.video-js .vjs-play-progress:before {
+    position: absolute;
+    top: -0.333333333333333em;
+    right: -0.5em;
+    font-size: 0.9em;
+    display: none;
+}
+
+
+.custom-skin.vjs-remaining-time-display{
+    display: none;
+}
+
+.custom-skin.video-js .vjs-current-time,
+.custom-skin.vjs-no-flex .vjs-current-time {
+  display: block;
+  padding: 0px;
+}
+
+.custom-skin.video-js .vjs-duration,
+.custom-skin.vjs-no-flex .vjs-duration {
+  display: block;
+  padding: 0px;
+}
+
+.custom-skin.video-js .vjs-time-divider
+{
+  display: block;
+}
+.custom-skin.video-js .vjs-progress-control{
+      padding-top: 3px;
+}
+
+.custom-skin.video-js .vjs-progress-control:hover .vjs-time-tooltip,
+.custom-skin.video-js .vjs-progress-control:hover .vjs-mouse-display:after,
+.custom-skin.video-js .vjs-progress-control:hover .vjs-play-progress:after {
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: visible;
+  font-size: 0.6em;
+  display: none;
+}
+
+.custom-skin.video-js .vjs-progress-control:hover .vjs-progress-holder {
+  font-size: 1em }
+
+  .custom-skin.video-js .vjs-progress-control:hover .vjs-mouse-display {
+  display: none; }
+
+  .vjs-slider-vertical .vjs-volume-level:before{
+  display: none;
+}
+
+.vjs-volume-menu-button-vertical:hover .vjs-menu-content,
+.vjs-volume-menu-button-vertical:focus .vjs-menu-content,
+.vjs-volume-menu-button-vertical.vjs-slider-active .vjs-menu-content,
+.vjs-volume-menu-button-vertical .vjs-lock-showing .vjs-menu-content {
+    height: 87px;
+    width: 23px;
+    padding: 10px 0;
+    overflow: visible;
+    background: rgba(255,255,255,0.5);
+}
+
+.custom-skin.video-js .vjs-volume-level {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: snow;
+    opacity: 1;
+    box-shadow: 0 0 15px 2px #fff;
+}
+.custom-skin.video-js.vjs-volume-bar.vjs-slider-vertical {
+    width: 0.3em;
+    height: 7em;
+    margin: 0.35em auto;
+}
+

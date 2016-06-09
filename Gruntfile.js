@@ -82,7 +82,7 @@ module.exports = function(grunt) {
         // Task-specific options go here.
       },
       all: {
-        src: ["assets/css/vendor/*.css"],
+        src: ['assets/css/vendor/*.css'],
         dest: "public/css/vendor.css"
       },
     },

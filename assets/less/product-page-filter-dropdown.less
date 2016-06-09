@@ -1,34 +1,86 @@
 .product-page-filter-dropdown{
 
-  padding-top: 2px;
+  line-height: 36px;
 
   .filter-title{
     padding-top: 5px;
     padding-right: 0px;
   }
 
-  span{
-    font-size: 15px;
-  }
-
-  button{
-    padding: 5px;
-    background-color: #ffffff;
-    border: none;
-
-    i{
-      font-size: 60%;
-    }
-  }
-
   .filter-dropdown{
+
     color: #c7c7c7;
-    // margin-top: -5px;
-    ul{
-      border-radius: 0px;
-      padding: 10px;
-      margin-left: 20px;
-      margin-top: 4px;
+
+    .nopadding {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .porduct-category{
+      span{
+        font-size: 15px;
+      }
+
+      button{
+        padding: 5px;
+        background-color: #ffffff;
+        border: none;
+
+        i{
+          font-size: 60%;
+        }
+      }
+      ul{
+        border-radius: 0px;
+        margin-left: 40%;
+        margin-top: 1%;
+        padding: 0px;
+
+        li{
+          border-top:1px solid;
+          border-bottom: 1px solid;
+          padding-left: 3%;
+          input{
+            margin-right: 5%;
+            margin-top: 5%;
+          }
+        }
+      }
+    }
+    .product-material{
+      span{
+        font-size: 15px;
+      }
+
+      button{
+        padding: 5px;
+        background-color: #ffffff;
+        border:none;
+
+        i{
+          font-size: 60%;
+        }
+      }
+      ul{
+        border-radius: 0px;
+        margin-left: -60%;
+        margin-top: 1%;
+        padding: 0px;
+
+        li{
+          border-top:1px solid;
+          border-bottom: 1px solid;
+          padding-left: 3%;
+        input{
+          margin-right: 5%;
+          margin-top: 5%;
+        }
+        }
+      }
     }
   }
+}
+
+.border{
+  border:1px solid !important;
 }

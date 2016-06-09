@@ -7,41 +7,46 @@ module.exports = BaseView.extend({
 
   },
   postRender: function(){
-  	var player = videojs('my-video', {
-               fluid:true,
-               aspectRatio:"16:9",
-                controlBar: {
-                    children: {
-                       PlayToggle:true,
-                       currentTimeDisplay: true,
-                       timeDivider: true,
-                       durationDisplay: true,
-                       progressControl: true,
-                       volumeMenuButton: {
-                            vertical: true,
-                            inline: false,
-                            volumeBar: {
-                                vertical: true
-                            },
-                            volumeLevel: false
-                        },
-                        fullscreenToggle: true
-                    }
-                }
-            });
 
-  $("#video-button").click(function(){
-    $("#video-banner").hide();
-     $("#vedio-div").show();
-     $("#my-video video").get(0).play();
-});
-  $("#vedio-close-button").click(function(){
-    $("#video-banner").show();
-     $("#vedio-div").hide();
-    $("#my-video video").get(0).pause();
+ var player = videojs('my-video', {
+   aspectRatio:"16:9",
+    controlBar: {
+        children: {
+           PlayToggle:true,
+           currentTimeDisplay: true,
+           timeDivider: true,
+           durationDisplay: true,
+           progressControl: true,
+           volumeMenuButton: {
+                vertical: true,
+                inline: false,
+                volumeBar: {
+                    vertical: true
+                },
+                volumeLevel: false
+            },
+            fullscreenToggle: true
+        }
+    }
+ });
+
+var $videoBanner = this.$("#video-banner");
+var $videoDiv = this.$("#vedio-div");
+
+
+this.$("#video-button").click(function(){
+  $videoBanner.hide();
+  $videoDiv.show();
+  $("#my-video video").get(0).play();
 });
 
-  }
+this.$("#vedio-close-button").click(function(){
+  $videoBanner.show();
+  $videoDiv.hide();
+  $("#my-video video").get(0).pause();
+});
+
+}
 
 });
 module.exports.id = 'video-banner/video-banner';
