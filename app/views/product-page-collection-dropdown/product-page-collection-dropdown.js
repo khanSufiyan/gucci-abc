@@ -7,6 +7,13 @@ module.exports = BaseView.extend({
 
   },
   postRender: function(){
+  // 	var $collectiondropDown = this.$("#porduct-collection-dropdown");
+
+
+  //  $collectiondropDown.click(function(){
+
+  //  	 $("#product-collection-dropdown-button").toggleClass('border');
+		// });
 
   }
 

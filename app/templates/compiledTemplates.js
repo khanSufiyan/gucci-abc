@@ -80,7 +80,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return " <div class=\"product-page-collection-dropdown\">\n\n  <div class=\"dropdown\">\n			<button class=\"dropdown-toggle\" type=\"button\" id=\"product-page-collection-dropdown-menu\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n		  browse by collection\n				<span class=\"caret\"></span>\n			</button>\n			<ul class=\"dropdown-menu\" aria-labelledby=\"product-page-collection-dropdown-menu\">\n				<li>Yellow Gold</li>\n					<li>Pink Gold</li>\n					<li>White Gold</li>\n					<li>Sliver</li>\n			</ul>\n		</div>\n </div>\n";
+  return " <div class=\"product-page-collection-dropdown\">\n\n  <div id=\"porduct-collection-dropdown\" class=\"dropdown\">\n			<button class=\"dropdown-toggle\" type=\"button\" id=\"product-collection-dropdown-button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\">\n		  browse by collection\n				<span class=\"caret\"></span>\n			</button>\n			<ul class=\"dropdown-menu\" aria-labelledby=\"product-collection-dropdown-button\">\n				 <li>Yellow Gold</li>\n					<li>Pink Gold</li>\n					<li>White Gold</li>\n					<li>Sliver</li>\n			</ul>\n		</div>\n </div>\n";
   });
 
 templates["product-page-filter-dropdown/product-page-filter-dropdown"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {

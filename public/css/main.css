@@ -7116,7 +7116,7 @@ html {
   overflow: hidden;
 }
 .product-options {
-  border: 1px solid;
+  border-bottom: 1px solid #c7c7c7;
   padding-left: 10%;
   padding-right: 10%;
   height: 50px;
@@ -7244,8 +7244,12 @@ html {
 }
 .product-page-collection-dropdown ul {
   border-radius: 0px;
-  padding: 10px;
-  margin-top: 4px;
+  margin-top: 1%;
+  padding: 0px;
+}
+.product-page-collection-dropdown li {
+  border-bottom: 1px solid;
+  padding-left: 3%;
 }
 .product-page-collection-dropdown button {
   padding: 5px;
@@ -7273,7 +7277,7 @@ html {
   font-size: 15px;
 }
 .product-page-filter-dropdown .filter-dropdown .porduct-category button {
-  padding: 5px;
+  padding: 6px;
   background-color: #ffffff;
   border: none;
 }
@@ -7282,12 +7286,11 @@ html {
 }
 .product-page-filter-dropdown .filter-dropdown .porduct-category ul {
   border-radius: 0px;
-  margin-left: 40%;
-  margin-top: 1%;
+  margin-left: 39.5%;
+  margin-top: -1px;
   padding: 0px;
 }
 .product-page-filter-dropdown .filter-dropdown .porduct-category ul li {
-  border-top: 1px solid;
   border-bottom: 1px solid;
   padding-left: 3%;
 }
@@ -7299,7 +7302,7 @@ html {
   font-size: 15px;
 }
 .product-page-filter-dropdown .filter-dropdown .product-material button {
-  padding: 5px;
+  padding: 6px;
   background-color: #ffffff;
   border: none;
 }
@@ -7308,12 +7311,11 @@ html {
 }
 .product-page-filter-dropdown .filter-dropdown .product-material ul {
   border-radius: 0px;
-  margin-left: -60%;
-  margin-top: 1%;
+  margin-left: -58.5%;
+  margin-top: -1px;
   padding: 0px;
 }
 .product-page-filter-dropdown .filter-dropdown .product-material ul li {
-  border-top: 1px solid;
   border-bottom: 1px solid;
   padding-left: 3%;
 }

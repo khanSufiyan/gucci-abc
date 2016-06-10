@@ -7,15 +7,15 @@ module.exports = BaseView.extend({
 
   },
   postRender: function(){
-  var $categorydropDown = this.$("#porduct-category-dropdown")
-  var $materialdropDown = this.$("#product-material-dropdown")
+  var $categorydropDown = this.$("#porduct-category-dropdown");
+  var $materialdropDown = this.$("#product-material-dropdown");
 
    $categorydropDown.click(function(){
-   $("#porduct-category-dropdown-button").toggleClass('border')
+    $("#porduct-category-dropdown-button").toggleClass('border');
 		});
 
    $materialdropDown.click(function(){
-  $("#product-material-dropdown-button").toggleClass('border')
+   $("#product-material-dropdown-button").toggleClass('border');
 		});
 
  }
