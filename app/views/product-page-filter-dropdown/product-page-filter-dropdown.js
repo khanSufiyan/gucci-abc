@@ -7,16 +7,16 @@ module.exports = BaseView.extend({
 
   },
   postRender: function(){
-  var $categorydropDown = this.$("#porduct-category-dropdown");
-  var $materialdropDown = this.$("#product-material-dropdown");
+  var $categoryDropdownBtn = this.$("#porduct-category-dropdown-button");
+  var $materialDropdownBtn = this.$("#product-material-dropdown-button");
 
-   $categorydropDown.click(function(){
-    $("#porduct-category-dropdown-button").toggleClass('border');
-		});
+  $categoryDropdownBtn.click(function(){
+    $categoryDropdownBtn.toggleClass('border');
+  });
 
-   $materialdropDown.click(function(){
-   $("#product-material-dropdown-button").toggleClass('border');
-		});
+  $materialDropdownBtn.click(function(){
+    $materialDropdownBtn.toggleClass('border');
+  });
 
  }
 });
